@@ -1,0 +1,16 @@
+# Data (large / local only)
+data/
+*.csv
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
