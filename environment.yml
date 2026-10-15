@@ -1,0 +1,56 @@
+name: ds
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.13
+  - pip
+
+  # Core data
+  - numpy
+  - pandas
+  - polars
+  - pyarrow
+  - duckdb
+  - python-duckdb
+
+  # Stats and modeling
+  - scipy
+  - statsmodels
+  - scikit-learn
+  - xgboost
+  - lightgbm
+  - shap
+  - optuna
+
+  # Visualization
+  - matplotlib
+  - seaborn
+  - plotly
+  - altair
+
+  # Notebooks
+  - jupyterlab
+  - notebook
+  - ipykernel
+  - ipywidgets
+  - nbconvert
+
+  # Data access
+  - requests
+  - beautifulsoup4
+  - lxml
+  - openpyxl
+  - sqlalchemy
+  - psycopg2
+
+  # Utilities
+  - tqdm
+  - joblib
+  - python-dotenv
+  - ruff
+
+  # R bridge for the %%R model cells. Installed with pip, not conda, so it uses the system R
+  # (CRAN R 4.5+ with lme4, arrow, broom.mixed) instead of pulling a second R into the env.
+  - pip:
+      - rpy2

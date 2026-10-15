@@ -14,3 +14,12 @@ env/
 
 # macOS
 .DS_Store
+
+# Personal / scratch (never published)
+alpha-application/
+prompt.txt
+
+# Data copies and third-party papers
+archive/old_outputs/
+*.parquet
+references/*.pdf
